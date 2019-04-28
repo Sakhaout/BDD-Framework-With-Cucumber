@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRMPRO Test suite" duration-ms="1052" started-at="2019-04-28T08:26:31Z" finished-at="2019-04-28T08:26:32Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="RunnerClass.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crmpro.runnerClass.RunnerClass@7085bdee]" name="feature" class="com.crmpro.runnerClass.RunnerClass"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="CRMPRO testing feature" duration-ms="1052" started-at="2019-04-28T08:26:31Z" finished-at="2019-04-28T08:26:32Z">
+      <class name="com.crmpro.runnerClass.RunnerClass">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.crmpro.runnerClass.RunnerClass@7085bdee]" name="setUpClass" is-config="true" duration-ms="609" started-at="2019-04-28T08:26:31Z" finished-at="2019-04-28T08:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crmpro.runnerClass.RunnerClass@7085bdee]" name="feature" duration-ms="31" started-at="2019-04-28T08:26:32Z" description="Runs cucumber feature" data-provider="features" finished-at="2019-04-28T08:26:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CRMPRO Login page future]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crmpro.runnerClass.RunnerClass@7085bdee]" name="tearDown" is-config="true" duration-ms="52" started-at="2019-04-28T08:26:32Z" finished-at="2019-04-28T08:26:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crmpro.runnerClass.RunnerClass -->
+    </test> <!-- CRMPRO testing feature -->
+  </suite> <!-- CRMPRO Test suite -->
+</testng-results>
