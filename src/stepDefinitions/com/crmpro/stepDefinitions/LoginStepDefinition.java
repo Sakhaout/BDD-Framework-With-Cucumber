@@ -3,9 +3,7 @@ package com.crmpro.stepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import com.crmpro.Base_Page.BasePage;
@@ -16,7 +14,7 @@ import cucumber.api.java.en.When;
 
 public class LoginStepDefinition extends BasePage {
 	
-	public WebDriver driver = new ChromeDriver();
+//	public WebDriver driver = new ChromeDriver();
 
 	
 	@Given("^user is already on Login Page$")
@@ -28,7 +26,7 @@ public class LoginStepDefinition extends BasePage {
 	public void title_of_login_page_is_Free_CRM(){
 		 String title = driver.getTitle();
 	     System.out.println(title);
-		 Assert.assertEquals("#1 Free CRM for Any Business: Online Customer Relationship Software", title);	}
+		 Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.", title);	}
 	
 	
 	@Then("^user enters username and password$")

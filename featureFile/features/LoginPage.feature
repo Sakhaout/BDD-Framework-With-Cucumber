@@ -1,4 +1,3 @@
-@UATTesting
 Feature: CRMPRO Login page future
 
 Scenario: Free CRM Login Test Scenario
