@@ -14,9 +14,9 @@
 
 
 	<build>
-
 		<plugins>
 
+			<!-- surefire Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -28,6 +28,7 @@
 				</configuration>
 			</plugin>
 
+			<!-- compiler Plugin -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
@@ -38,29 +39,30 @@
 					<executable>C:\Program Files\Java\jdk1.8.0_191\bin\javac</executable>
 				</configuration>
 			</plugin>
-			
+
+			<!-- Plugin for Cucumber-JVM HTML Report -->
 			<plugin>
-        <groupId>net.masterthought</groupId>
-        <artifactId>maven-cucumber-reporting</artifactId>
-        <version>2.0.0</version>
-        <executions>
-          <execution>
-            <id>execution</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-            <configuration>
-              <projectName>cucumber-jvm-example</projectName>
-              <outputDirectory>${project.build.directory}/site/cucumber-reports</outputDirectory>
-              <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-              <skippedFails>true</skippedFails>
-              <enableFlashCharts>false</enableFlashCharts>
-              <buildNumber>42</buildNumber>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>2.0.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>cucumber-jvm-example</projectName>
+							<outputDirectory>${project.build.directory}/site/cucumber-reports</outputDirectory>
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+							<skippedFails>true</skippedFails>
+							<enableFlashCharts>false</enableFlashCharts>
+							<buildNumber>42</buildNumber>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 		</plugins>
 	</build>
@@ -76,18 +78,21 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.6.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.5</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
 			<version>1.0.5</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>
@@ -100,12 +105,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.8</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-reporting</artifactId>

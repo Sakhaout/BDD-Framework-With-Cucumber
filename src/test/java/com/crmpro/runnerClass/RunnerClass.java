@@ -12,8 +12,6 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		features ="C:\\Users\\Hossain Sakhaout\\Desktop\\MavenProject\\BDD-Framework-With-Cucumber\\featureFile\\features\\LoginPage.feature",
 		glue = {"com.crmpro.stepDefinitions"},
-//		plugin = { "pretty", "html:target/cucumber-reports" },
-//		monochrome = true
 		format = { "pretty","json:target/cucumber.json" }, monochrome = true
 		)
 
