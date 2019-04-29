@@ -19,14 +19,15 @@ public class LoginStepDefinition extends BasePage {
 	
 	@Given("^user is already on Login Page$")
 	public void user_atready_on_Login_Page() {
-		BasePage.initialition();
 	}
+	
 	
 	@When("^title of login page is Free CRM$")
 	public void title_of_login_page_is_Free_CRM(){
 		 String title = driver.getTitle();
 	     System.out.println(title);
-		 Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.", title);	}
+		 Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.", title);	
+	}
 	
 	
 	@Then("^user enters username and password$")
