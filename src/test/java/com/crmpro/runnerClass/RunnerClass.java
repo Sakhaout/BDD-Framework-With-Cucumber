@@ -10,7 +10,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		features ="C:\\Users\\Hossain Sakhaout\\Desktop\\MavenProject\\BDD-Framework-With-Cucumber\\featureFile\\features\\LoginPage.feature",
+		features = {"C:\\Users\\Hossain Sakhaout\\Desktop\\MavenProject\\BDD-Framework-With-Cucumber\\featureFile\\features\\LoginPage.feature"},
 		glue = {"com.crmpro.stepDefinitions"},
 		format = { "pretty","json:target/cucumber.json" }, monochrome = true
 		)
