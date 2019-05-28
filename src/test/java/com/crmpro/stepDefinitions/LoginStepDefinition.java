@@ -33,8 +33,8 @@ public class LoginStepDefinition extends BasePage {
 
 	@Then("^user enters username and password$")
 	public void user_enters_username_and_password(){
-		driver.findElement(By.name("username")).sendKeys("sakhaout");
-		driver.findElement(By.name("password")).sendKeys("Sakhaout8");
+		driver.findElement(By.name("username")).sendKeys("USERNAME");
+		driver.findElement(By.name("password")).sendKeys("PASSWORD");
 	}
 
 	@Then("^user clicks on login button$")
