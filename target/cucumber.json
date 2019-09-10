@@ -1,0 +1,98 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 34173954400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHook.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User able to click on ContactsPage",
+        "description": "",
+        "id": "crmpro-contactspage-future;user-able-to-click-on-contactspage",
+        "after": [
+          {
+            "result": {
+              "duration": 169600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHook.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14417753100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user will login into loginPage",
+            "match": {
+              "location": "StepDefinition_contactsPage.user_will_login_into_loginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74864400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user will landing to HomePage",
+            "match": {
+              "location": "StepDefinition_contactsPage.user_will_landing_to_HomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2540224400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user will click on Contacts",
+            "match": {
+              "location": "StepDefinition_contactsPage.user_will_click_on_Contacts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13865900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "varify user is in ContactsPage",
+            "match": {
+              "location": "StepDefinition_contactsPage.varify_user_is_in_ContactsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CRMPRO ContactsPage future",
+    "description": "",
+    "id": "crmpro-contactspage-future",
+    "keyword": "Feature",
+    "uri": "ContactsPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ContactsPageFuture"
+      }
+    ]
+  }
+]

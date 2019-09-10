@@ -1,0 +1,4 @@
+com\crmpro\runnerClass\RunnerClass.class
+com\crmpro\stepDefinitions\StepDefinition_Login.class
+com\crmpro\stepDefinitions\StepDefinition_contactsPage.class
+com\crmpro\test\hooks\ServiceHook.class

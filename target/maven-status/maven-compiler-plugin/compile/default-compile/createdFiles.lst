@@ -1,0 +1,6 @@
+com\crmpro\Page_Class\HomePage.class
+com\crmpro\utilits\CommonAction.class
+com\crmpro\ParentPageClass\BasePage.class
+com\crmpro\Page_Class\ContactsPage.class
+com\crmpro\utilits\Utils.class
+com\crmpro\Page_Class\LogInPage.class
