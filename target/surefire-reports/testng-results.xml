@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRMPRO Test suite" duration-ms="53161" started-at="2019-09-01T01:11:41Z" finished-at="2019-09-01T01:12:34Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crmpro.runnerClass.RunnerClass@48eff760]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Chrome test" duration-ms="53161" started-at="2019-09-01T01:11:41Z" finished-at="2019-09-01T01:12:34Z">
+      <class name="com.crmpro.runnerClass.RunnerClass">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.crmpro.runnerClass.RunnerClass@48eff760]" name="setUpClass" is-config="true" duration-ms="630" started-at="2019-08-31T21:11:41Z" finished-at="2019-08-31T21:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crmpro.runnerClass.RunnerClass@48eff760]" name="feature" duration-ms="51427" started-at="2019-08-31T21:11:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-31T21:12:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CRMPRO ContactsPage future]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.crmpro.runnerClass.RunnerClass@48eff760]" name="tearDownClass" is-config="true" duration-ms="821" started-at="2019-08-31T21:12:33Z" finished-at="2019-08-31T21:12:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.crmpro.runnerClass.RunnerClass -->
+    </test> <!-- Chrome test -->
+  </suite> <!-- CRMPRO Test suite -->
+</testng-results>
