@@ -7,13 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crmpro.Base_Page.BasePage;
-
-
-
-
-
-
+import com.crmpro.ParentPageClass.BasePage;
 
 public class HomePage extends BasePage{
 	

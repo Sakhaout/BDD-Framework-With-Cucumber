@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CRMPRO testing feature</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 29 11:25:43 EDT 2019</td>
+<td>Started on:</td><td>Thu May 02 03:46:56 EDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28768 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32368 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,49 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.crmpro.runnerClass.RunnerClass.feature()'><b>feature</b><br>Test class: com.crmpro.runnerClass.RunnerClass<br>Test method: Runs cucumber feature<br>Parameters: CRMPRO Login page future</td>
-<td></td>
-<td>27</td>
-<td>com.crmpro.runnerClass.RunnerClass@402a079c</td></tr>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [CRMPRO] but found [CRMPR]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.crmpro.runnerClass.RunnerClass.feature(RunnerClass.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: expected [CRMPRO] but found [CRMPR]
+	at com.crmpro.stepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:51)
+	at ?.Then user is on home page(C:/Users/Hossain Sakhaout/Desktop/MavenProject/BDD-Framework-With-Cucumber/featureFile/features/LoginPage.feature:10)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace188425337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace188425337'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [CRMPRO] but found [CRMPR]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.crmpro.runnerClass.RunnerClass.feature(RunnerClass.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: expected [CRMPRO] but found [CRMPR]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.crmpro.stepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:51)
+	at ?.Then user is on home page(C:/Users/Hossain Sakhaout/Desktop/MavenProject/BDD-Framework-With-Cucumber/featureFile/features/LoginPage.feature:10)
+</pre></div></td>
+<td>31</td>
+<td>com.crmpro.runnerClass.RunnerClass@5f2108b5</td></tr>
 </table><p>
 </body>
 </html>

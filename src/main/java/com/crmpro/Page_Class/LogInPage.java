@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crmpro.Base_Page.BasePage;
+import com.crmpro.ParentPageClass.BasePage;
+import com.crmpro.utilits.CommonAction;
 
 
 
@@ -40,6 +41,15 @@ public class LogInPage extends BasePage {
 			ex.getStackTrace();
 		}
 		
+	}
+	
+	public void enterUserName_Password(String userID, String pass){
+		CommonAction.sendKeys(userName, userID);
+		CommonAction.sendKeys(password, pass);
+	}
+	
+	public void clickOnLogin_button() {
+		CommonAction.click(logIn_button);
 	}
 
 }

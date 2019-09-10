@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="CRMPRO Test suite">
-	<test name="CRMPRO testing feature">
 
+	<test name="Chrome test">
 		<classes>
-			<class name="com.crmpro.runnerClass.RunnerClass"/>
-
+			<class name="com.crmpro.runnerClass.RunnerClass" />
 		</classes>
 	</test> <!-- Test -->
+
 </suite> <!-- Suite -->
